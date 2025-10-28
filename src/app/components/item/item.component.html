@@ -1,0 +1,18 @@
+<div class="container mb-5">
+    <div class="d-flex justify-content-between">
+        <div class="col-xl-6">
+            <span class="font-size-7">{{product.Name}}</span>
+            <h5>₹{{product.BasePrice}}</h5>
+            <!-- <span class="container-multi-line">
+                Serves 1 | Kadai Paneer is a popular Indian dish featuring paneer (Indian cottage cheese) cooked with a
+                mix of bell peppers, tomatoes, and a blend of aromatic spices.
+            </span> -->
+        </div>
+        <div class="col-xl-6">
+            <div class="position-relative">
+                <img loading="lazy" class="rounded-4 object-fit-cover" height="144" width="156" [src]="product.ImgUrl" alt="Kadai Paneer">
+                <add-button class="bottom-center-overlay" [quantity]="quantity" (quantityChanged)="handleQuantityChange($event)"></add-button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="d-flex bg-white rounded shadow text-center justify-content-between py-1" style="width: 130px;" [ngClass]="{'border border-3 border-success' : quantity > 0}">
+    <button class="btn col-xl-3" @slideInLeft [@slideInLeft]="showHyphen ? 'visible' : 'hidden'" (click)="decrement()" (longPress)="clearQty()">-</button>
+    @if (quantity <= 0){
+        <button class="btn col-xl" (click)="toggleHyphen()">ADD</button>
+    } 
+    @else{
+        <div class="position-relative d-flex" style="align-items: center; justify-content: center;">
+        @for (n of [quantity]; track quantity) {
+            <div [@countChange]="quantity" class="count-number">
+                {{ n }}
+            </div>
+        }
+        </div>
+    }
+    <button class="btn col-xl-3" @slideInRight [@slideInRight]="showHyphen ? 'visible' : 'hidden'" (click)="increment()">+</button>
+</div>

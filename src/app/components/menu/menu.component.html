@@ -1,0 +1,7 @@
+@for (cat of categories; track $index) {
+    @for (childcat of cat.Childcategories; track $index) {
+        @for (prod of childcat.Products; track prod.Id) {
+            <menu-item [product]="prod"></menu-item>
+        }
+    }
+}

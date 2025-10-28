@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+// Customize bootstrap
+$primary: #d7263d;
+$font-family-base: 'Poppins', sans-serif;
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  /* Improves loading performance */
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/assets/fonts/Jost-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  /* Same weight range for italic */
+  font-style: italic;
+  font-display: swap;
+}
+
+body,
+html {
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Allow selection in specific areas */
+input, textarea, .selectable-text {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.font-size-1 {
+  font-size: xx-small;
+}
+
+.font-size-2 {
+  font-size: x-small;
+}
+
+.font-size-3 {
+  font-size: smaller;
+}
+
+.font-size-4 {
+  font-size: small;
+}
+
+.font-size-5 {
+  font-size: medium;
+}
+
+.font-size-6 {
+  font-size: large;
+}
+
+.font-size-7 {
+  font-size: larger;
+}
+
+.font-size-8 {
+  font-size: x-large;
+}
+
+.font-size-9 {
+  font-size: xx-large;
+}
+
+.font-size-10 {
+  font-size: xxx-large;
+}
+
+// .icon-cart {
+//   display: inline-block;
+//   width: 24px;
+//   height: 24px;
+//   background-image: url('/assets/svgs/cart.svg');
+// }
+
+.icon-cart:before {
+  content: "\e900";
+  color: #e3e3e3;
+}

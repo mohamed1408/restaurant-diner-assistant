@@ -1,0 +1,14 @@
+.container-multi-line {
+  display: -webkit-box; /* Enables flexible box model */
+  -webkit-line-clamp: 2; /* Specifies the number of lines to display */
+  -webkit-box-orient: vertical; /* Sets the box orientation to vertical */
+  overflow: hidden; /* Hides overflowing content */
+}
+
+.bottom-center-overlay {
+    width: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate3d(-50%, 50%, 10px);
+}

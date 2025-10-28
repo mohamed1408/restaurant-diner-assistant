@@ -1,0 +1,46 @@
+@if (isExpanded) {
+    <div class="backdrop z-2" (click)="isExpanded = false"></div>
+}
+<div class="position-fixed bottom-0 w-100 z-3" [@expandCollapse]="(itemCount > 0) ? 'expanded' : 'collapsed'">
+    <div class="bg-success text-white py-2 px-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <span>
+                {{itemCount}} Item{{itemCount > 1 ? 's' : ''}} added | Total: ₹{{totalPrice}}
+            </span>
+            <button class="btn text-white d-flex gap-1" (click)="isExpanded = !isExpanded">
+                <span>VIEW CART</span>
+                <img src="/assets/svgs/cart.svg" height="20" alt="" srcset="">
+            </button>
+        </div>
+        <div [@expandCollapse]="isExpanded ? 'expanded' : 'collapsed'">
+            <!-- Expanded content goes here -->
+            <table class="table table-success">
+                <tbody>
+                    @for (item of cartItems; track $index){
+                        <tr style="vertical-align: middle;">
+                            <td>{{item.product.Name}}</td>
+                            <td>
+                                <button class="btn text-danger p-0 w-100 font-size-9" (click)="decrease(item.product.Id)">-</button>
+                            </td>
+                            <td> x {{item.quantity}}</td>
+                            <td>
+                                <button class="btn text-success p-0 w-100 font-size-9" (click)="increase(item.product.Id)">+</button>
+                            </td>
+                            <td>₹{{item.product.BasePrice * item.quantity}}</td>
+                            <td>
+                                <button class="btn text-danger p-0 w-100 font-size-9" (click)="removeItem(item.product.Id)">&times;</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <button class="btn btn-outline-light w-100">Place Order</button>
+            <!-- @for (item of cartItems; track $index) {
+                <div class="mt-3">
+                    <span>{{item.product.Name}} x {{item.quantity}}</span>
+                    <span>₹{{item.product.BasePrice * item.quantity}}</span>
+                </div>
+            } -->
+        </div>
+    </div>
+</div>
