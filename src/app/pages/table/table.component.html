@@ -1,4 +1,9 @@
-<div class="container">
-    <app-menu [catalogue]="catalogue" [cartItems]="cartItems"></app-menu>
-</div>
-<mini-cart [cartItems]="cartItems"></mini-cart>
+<app-header [customername]="loginedInCustomer ? loginedInCustomer.name : '-'"></app-header>
+@if (mode === 'orderhistory') {
+    <app-orderhistory></app-orderhistory>
+} @else {
+    <div class="container">
+        <app-menu [catalogue]="catalogue" [cartItems]="cartItems"></app-menu>
+    </div>
+    <mini-cart [cartItems]="cartItems"></mini-cart>
+}

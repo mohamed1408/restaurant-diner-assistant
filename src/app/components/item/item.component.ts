@@ -18,6 +18,8 @@ export class ItemComponent {
       const quantityEvt = this.menuservice.quantityEvt();
       if (quantityEvt && quantityEvt.productId === this.product.Id) {
         this.quantity = quantityEvt.quantity;
+      } else if (quantityEvt && quantityEvt.productId === 0 && quantityEvt.quantity === 0) {
+        this.quantity = 0;
       }
     })
   }

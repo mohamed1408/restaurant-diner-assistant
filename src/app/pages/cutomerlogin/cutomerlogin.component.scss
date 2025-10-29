@@ -1,0 +1,11 @@
+.login-container {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  height: 100dvh;            /* full viewport height */
+}
+
+.input-control {
+    all: unset;
+    font-size: 1.2rem;
+}

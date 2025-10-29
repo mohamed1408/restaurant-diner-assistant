@@ -55,3 +55,12 @@ export class CartItem {
     product: Product = new Product();
     quantity: number = 0;
 }
+export class Order {
+    CartItems: CartItem[] = [];
+    TableId: string = '';
+    CustomerName: string = '';
+    CustomerPhoneNumber: string = '';
+    OrderedDate: Date = new Date();
+    OrderStatus: number = 0;
+    KOTNumber: string = '';
+}

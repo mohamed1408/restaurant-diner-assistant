@@ -1,0 +1,23 @@
+<div class="login-container">
+    <div>
+        <div class="text-center mb-4">Welcome!</div>
+        <div class="mb-1 py-2">
+            <div class="d-flex border-bottom">
+                <img src="/assets/svgs/person.svg" alt="" srcset="" height="50">
+                <input type="text" class="input-control" [(ngModel)]="name" placeholder="Your kind name, Please."
+                    (input)="invalid_marker.name = 1">
+            </div>
+            <span [@shake]="invalid_marker.shakeState" class="float-end fst-italic text-danger">{{(invalid_marker.name == -1) ? '*Name is mandatory' : ''}}</span>
+        </div>
+        <div class="mb-1 py-2">
+            <div class="d-flex border-bottom">
+                <img src="/assets/svgs/call.svg" alt="" srcset="" height="50">
+                <input type="text" class="input-control" [(ngModel)]="phonenumber" placeholder="Your phone number."
+                    (input)="invalid_marker.phonenumber = 1">
+            </div>
+            <span [@shake]="invalid_marker.shakeState"
+                class="float-end fst-italic text-danger">{{(invalid_marker.phonenumber == -1) ? '*Phone number is mandatory' : ''}}</span>
+        </div>
+        <button class="w-100 btn btn-primary rounded-5 mt-4" (click)="login()">Login</button>
+    </div>
+</div>
