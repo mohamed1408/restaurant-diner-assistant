@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1761733695394,
+  "timestamp": 1761733916668,
   "index": "/restaurant-diner-assistant/index.html",
   "assetGroups": [
     {
@@ -12,13 +12,13 @@
       },
       "urls": [
         "/restaurant-diner-assistant/chunk-GGQ7LRWG.js",
+        "/restaurant-diner-assistant/chunk-KASUG5UP.js",
         "/restaurant-diner-assistant/chunk-LD66H5SA.js",
-        "/restaurant-diner-assistant/chunk-UFOFAQCK.js",
         "/restaurant-diner-assistant/chunk-VARC3AN2.js",
         "/restaurant-diner-assistant/chunk-WWZ645Q7.js",
         "/restaurant-diner-assistant/favicon.ico",
         "/restaurant-diner-assistant/index.html",
-        "/restaurant-diner-assistant/main-GYD466JT.js",
+        "/restaurant-diner-assistant/main-KYXNVPI5.js",
         "/restaurant-diner-assistant/manifest.webmanifest",
         "/restaurant-diner-assistant/polyfills-OYTHSGNX.js",
         "/restaurant-diner-assistant/styles-2MXFAQ6D.css"
@@ -62,8 +62,8 @@
     "/restaurant-diner-assistant/assets/svgs/person.svg": "5044b712304e38a3e5b8007b80934eb82842b4b6",
     "/restaurant-diner-assistant/assets/svgs/person2.svg": "978be0e162f6aebd63c1237006f065030a90264e",
     "/restaurant-diner-assistant/chunk-GGQ7LRWG.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/restaurant-diner-assistant/chunk-KASUG5UP.js": "d5cd7553058ceeff2a681e57a57c2b3f9a88002b",
     "/restaurant-diner-assistant/chunk-LD66H5SA.js": "a70d2b00596ea19b91c1d4fbce88d9e6417b6b9e",
-    "/restaurant-diner-assistant/chunk-UFOFAQCK.js": "ddad41657055edae5432144c34f2ae12db42bcd4",
     "/restaurant-diner-assistant/chunk-VARC3AN2.js": "afcd3967ee24fe25ec53a804136b5905794f3758",
     "/restaurant-diner-assistant/chunk-WWZ645Q7.js": "86682ae60eee19f4346276ad1e4ef310fbfb27b7",
     "/restaurant-diner-assistant/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
@@ -75,8 +75,8 @@
     "/restaurant-diner-assistant/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/restaurant-diner-assistant/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/restaurant-diner-assistant/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/restaurant-diner-assistant/index.html": "ca1db23205817c5ad86dcaf9fd137431a18a0412",
-    "/restaurant-diner-assistant/main-GYD466JT.js": "4a335729806be88ffee2233ed9fcc58865f26902",
+    "/restaurant-diner-assistant/index.html": "4ad147aae675b13cf079f59ba3fb01b00ff58373",
+    "/restaurant-diner-assistant/main-KYXNVPI5.js": "4a82e744f481efff4f04acfffa43ecb7ff3d4aca",
     "/restaurant-diner-assistant/manifest.webmanifest": "7fdf4968e86f94bc91dc947299c05b7fef27dcaa",
     "/restaurant-diner-assistant/media/Jost-Italic-VariableFont_wght-ONIYTA3Y.ttf": "c57c9c5f49ba65302e5139b916494f3575ce0a46",
     "/restaurant-diner-assistant/media/Jost-VariableFont_wght-HUSSVU5R.ttf": "57a3591e1adbd615a4368353b1a15c2c895ab131",
